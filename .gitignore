@@ -2,3 +2,4 @@ demoenv
 build
 RegressorProject.egg-info
 dist
+logs
