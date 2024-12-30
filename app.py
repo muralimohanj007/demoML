@@ -33,8 +33,6 @@ def predict_datapoint():
         final_new_data=data.get_data_as_dataframe()
         predict_pipeline=PredictPipeline()
         pred=predict_pipeline.predict(final_new_data)
-        
-        print(pred)
         results=round(pred[0],2)
 
         return render_template('results.html',final_result=results)
